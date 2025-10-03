@@ -118,7 +118,7 @@ header {
 
 /* Contents */
 .container {
-    width: 60%;
+    width: 60vw;
     margin: 0 auto;
 }
 .section-title {
@@ -267,8 +267,7 @@ footer {
     }
 
     .header-left h1 {
-        font-size: 0.6rem;
-        text-align: center;
+        display: none;
     }
 
     .hamburger {
@@ -304,6 +303,12 @@ footer {
         padding: 15px 0;
     }
 
+    .container {
+        width: 90vw;
+    }
+    .section-title {
+        font-size: 1.0rem;
+    }
     .mainvisual {
         height: 50vh;
     }
