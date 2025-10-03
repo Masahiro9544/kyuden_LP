@@ -7,6 +7,9 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
     vertical-align:baseline;
     background:transparent
 }
+html {
+      scroll-behavior: smooth;
+    }
 body {
     max-width: 100%;
 }
@@ -16,6 +19,9 @@ nav ul {
 a {
     color: #000;
     text-decoration: none;
+}
+p {
+    font-size: 0.9rem;
 }
 section {
     margin-bottom: 60px;
@@ -117,6 +123,7 @@ header {
 }
 .section-title {
     text-align: center;
+    font-size: 1.2rem;
 }
 .section-title span {
     color: #004ea2;
@@ -252,6 +259,9 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    .pc-only {
+        display: none;
+    }
     .sp-only {
         display: block;
     }
@@ -294,6 +304,10 @@ footer {
         padding: 15px 0;
     }
 
+    .mainvisual {
+        height: 50vh;
+    }
+
     .contents4-inner1 {
         flex-direction: column;
         gap: 30px;
@@ -305,9 +319,12 @@ footer {
     /* 会社情報 */
     .clearFix {
         text-align: center;
+        font-size: 0.8rem;
     }
     .clearFix dt {
         width: 100%;
+        font-weight: bold;
+        margin-bottom: 8px;
     }
     .clearFix dd {
         width: 100%;
