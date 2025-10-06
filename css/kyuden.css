@@ -13,7 +13,7 @@ html {
 body {
     max-width: 100%;
 }
-nav ul {
+ul {
     list-style: none;
 }
 a {
@@ -169,6 +169,73 @@ table thead tr{
     margin-bottom: 20px;
 }
 
+/* カード */
+.contents2-inner1, .contents3-inner1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+}
+.card-user {
+    height: 150px;
+    width: 150px;
+}
+.card-user img {
+    width: 100%;
+    height: auto;
+}
+.card-orner {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.card-orner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* hover時の対応 */
+.card-orner {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card-orner img {
+    display: block;
+    width: 100%;
+    transition: opacity 0.3s;
+}
+
+.card-orner:hover img {
+    opacity: 0.3;
+}
+
+.card-orner::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    font-size: 0.7rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    white-space: normal;
+    max-width: 90%;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.card-orner:hover::after {
+    opacity: 1;
+}
+
 /* 会社情報 */
 .contents4-inner1 {
     margin-bottom: 40px;
@@ -250,6 +317,7 @@ footer {
 
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
 }
 .footer-left {
     width: 30%;
@@ -268,6 +336,9 @@ footer {
 
     .header-left h1 {
         display: none;
+    }
+    .header-logo {
+        margin-top: 10px;
     }
 
     .hamburger {
@@ -313,6 +384,10 @@ footer {
         height: 50vh;
     }
 
+    table th, table td {
+        font-size: 0.8rem;
+    }
+
     .contents4-inner1 {
         flex-direction: column;
         gap: 30px;
@@ -320,6 +395,14 @@ footer {
     .item {
         width: 100%;
     }
+
+    /* カード */
+    .contents2-inner1, .contents3-inner2 {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    
 
     /* 会社情報 */
     .clearFix {
@@ -329,10 +412,27 @@ footer {
     .clearFix dt {
         width: 100%;
         font-weight: bold;
-        margin-bottom: 8px;
+        margin-top: 4px;
     }
     .clearFix dd {
         width: 100%;
     }
 
+    footer {
+        padding: 10px;
+        flex-direction: column;
+    }
+    .footer-left {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .footer-right {
+        width: 100%;
+    }
+    .footer-right ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
 }
