@@ -61,7 +61,7 @@ header {
     font-size: 0.85rem;
 }
 .header-right nav ul li span {
-    color: #004ea2;
+    color: #950040;
     font-size: 0.6rem;
     font-weight: bold;
 }
@@ -129,7 +129,7 @@ header {
 }
 .section-title:before {
     position:absolute;
-    background-color: #004ea2;
+    background-color: #950040;
     border-radius: 1em;
     content: "";
     left: 0%;
@@ -139,7 +139,7 @@ header {
     height: 90%;
 }
 .section-title span {
-    color: #004ea2;
+    color: #950040;
     font-size: 0.6rem;
     font-weight: bold;
     display: block;
@@ -170,8 +170,8 @@ table th {
     font-size: .85rem;
 }
 table thead tr{
-    background: #000c7a;
-    background: linear-gradient(216deg, rgba(0, 12, 122, 1) 0%, rgba(46, 145, 188, 1) 80%, rgba(54, 168, 199, 1) 100%);
+    background: #e082ab;
+    background: linear-gradient(92deg,rgba(224, 130, 171, 1) 0%, rgba(180, 71, 118, 1) 21%, rgba(149, 0, 64, 1) 100%);
 }
 .contents1-inner2 table {
     text-align: center;
